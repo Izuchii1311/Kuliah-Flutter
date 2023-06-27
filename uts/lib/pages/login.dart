@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:uts/pages/errorPage.dart';
+// import 'package:uts/pages/errorPage.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -33,6 +33,7 @@ class _LoginPageState extends State<LoginPage> {
                     if(value == ''){
                       return "Email tidak boleh kosong";
                     }
+                    return null;
                   },
                   decoration: InputDecoration(border: OutlineInputBorder(), labelText: 'Alamat Email', hintText: 'Masukkan Email Anda...'),
                 ),
@@ -45,6 +46,7 @@ class _LoginPageState extends State<LoginPage> {
                     if(value == ''){
                       return "Password tidak boleh kosong";
                     }
+                    return null;
                   },
                   decoration: InputDecoration(border: OutlineInputBorder(), labelText: 'Password', hintText: 'Masukkan Password Anda...'),
                 ),

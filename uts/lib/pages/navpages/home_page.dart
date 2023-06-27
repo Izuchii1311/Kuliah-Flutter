@@ -1,7 +1,7 @@
 import 'package:carousel_slider/carousel_options.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:uts/pages/login.dart';
+// import 'package:uts/pages/login.dart';
 
 
 class HomePage extends StatefulWidget {
@@ -10,7 +10,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  int _current = 0;
   final CarouselController _controller = CarouselController();
 
   final List<Widget> myData = [
@@ -22,7 +21,6 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    final Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
@@ -49,7 +47,6 @@ class _HomePageState extends State<HomePage> {
                   aspectRatio: 2.0,
                   onPageChanged: (index, reason) {
                     setState(() {
-                      _current = index;
                     });
                   }
                 ),
